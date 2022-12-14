@@ -6,19 +6,19 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var RowsSelect = function RowsSelect(_ref) {
   var setRowsNb = _ref.setRowsNb;
-  return /*#__PURE__*/React.createElement("div", null, "Show", /*#__PURE__*/React.createElement("select", {
+  return _react.createElement("div", null, "Show", _react.createElement("select", {
     name: "select",
     id: "select",
     onChange: function onChange(e) {
       return setRowsNb(e.target.value);
     }
-  }, /*#__PURE__*/React.createElement("option", {
+  }, _react.createElement("option", {
     value: "10"
-  }, "10"), /*#__PURE__*/React.createElement("option", {
+  }, "10"), _react.createElement("option", {
     value: "25"
-  }, "25"), /*#__PURE__*/React.createElement("option", {
+  }, "25"), _react.createElement("option", {
     value: "50"
-  }, "50"), /*#__PURE__*/React.createElement("option", {
+  }, "50"), _react.createElement("option", {
     value: "100"
   }, "100")), "entries");
 };

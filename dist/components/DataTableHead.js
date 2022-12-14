@@ -71,25 +71,25 @@ var DataTableHead = function DataTableHead(_ref) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
-  return /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, columns.map(function (column) {
-    return /*#__PURE__*/React.createElement("th", {
+  return _react.createElement("thead", null, _react.createElement("tr", null, columns.map(function (column) {
+    return _react.createElement("th", {
       key: column.data,
       onClick: function onClick(e) {
         return handleSort(e, column.data);
       }
-    }, /*#__PURE__*/React.createElement("div", {
+    }, _react.createElement("div", {
       className: "columns-header"
-    }, column.title, /*#__PURE__*/React.createElement("svg", {
+    }, column.title, _react.createElement("svg", {
       className: "sort",
       width: "6",
       height: "18",
       viewBox: "0 0 6 18",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg"
-    }, /*#__PURE__*/React.createElement("path", {
+    }, _react.createElement("path", {
       d: "M0 7.99993L3 0L6 7.99993H0Z",
       fill: "#858585"
-    }), /*#__PURE__*/React.createElement("path", {
+    }), _react.createElement("path", {
       d: "M6 9.99986H0L3 18L6 9.99986Z",
       fill: "#858585"
     }))));

@@ -21,9 +21,9 @@ var Search = function Search(props) {
     setSearch(e.target.value);
     props.setSearch(e.target.value);
   };
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+  return _react.createElement("div", null, _react.createElement("label", {
     htmlFor: "search"
-  }, "Search: "), /*#__PURE__*/React.createElement("input", {
+  }, "Search: "), _react.createElement("input", {
     id: "search",
     name: "search",
     type: "text",

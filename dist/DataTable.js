@@ -64,27 +64,27 @@ var DataTable = function DataTable(_ref) {
       setPage(page - 1);
     }
   };
-  return /*#__PURE__*/React.createElement("div", {
+  return _react.createElement("div", {
     className: "data-table"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, _react.createElement("div", {
     className: "data-table-header"
-  }, /*#__PURE__*/React.createElement(_RowsSelect.default, {
+  }, _react.createElement(_RowsSelect.default, {
     setRowsNb: setRowsNb
-  }), /*#__PURE__*/React.createElement(_Search.default, {
+  }), _react.createElement(_Search.default, {
     setSearch: setSearch
-  })), /*#__PURE__*/React.createElement("table", null, columns && columns.length > 0 && /*#__PURE__*/React.createElement(_DataTableHead.default, {
+  })), _react.createElement("table", null, columns && columns.length > 0 && _react.createElement(_DataTableHead.default, {
     columns: columns,
     dataState: dataState,
     setDataState: setDataState
-  }), /*#__PURE__*/React.createElement("tbody", null, dataState.length === 0 ? /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("td", null, "No data found")) : dataState.slice((page - 1) * rowsNb, page * rowsNb).map(function (row, id) {
-    return /*#__PURE__*/React.createElement("tr", {
+  }), _react.createElement("tbody", null, dataState.length === 0 ? _react.createElement("tr", null, _react.createElement("td", null, "No data found")) : dataState.slice((page - 1) * rowsNb, page * rowsNb).map(function (row, id) {
+    return _react.createElement("tr", {
       key: id
     }, columns.map(function (column) {
-      return /*#__PURE__*/React.createElement("td", {
+      return _react.createElement("td", {
         key: column.data
       }, row[column.data]);
     }));
-  }))), /*#__PURE__*/React.createElement(_Pagination.default, {
+  }))), _react.createElement(_Pagination.default, {
     page: page,
     setPage: setPage,
     pages: pages,

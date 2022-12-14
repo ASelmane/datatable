@@ -23,16 +23,16 @@ var Pagination = function Pagination(_ref) {
     prevPage = _ref.prevPage,
     nextPage = _ref.nextPage,
     setPage = _ref.setPage;
-  return /*#__PURE__*/React.createElement("div", {
+  return _react.createElement("div", {
     className: "pagination"
-  }, /*#__PURE__*/React.createElement("button", {
+  }, _react.createElement("button", {
     className: "previous",
     onClick: prevPage,
     disabled: isFirst
   }, "Previous"), Array.from({
     length: pages
   }, function (_, i) {
-    return /*#__PURE__*/React.createElement("button", {
+    return _react.createElement("button", {
       key: i + 1,
       onClick: function onClick() {
         return setPage(i + 1);
@@ -40,7 +40,7 @@ var Pagination = function Pagination(_ref) {
       className: page === i + 1 ? 'page active' : 'page',
       disabled: i + 1 === page ? true : false
     }, i + 1);
-  }), /*#__PURE__*/React.createElement("button", {
+  }), _react.createElement("button", {
     className: "next",
     onClick: nextPage,
     disabled: isLast
