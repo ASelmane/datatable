@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _react = require("react");
 var RowsSelect = function RowsSelect(_ref) {
   var setRowsNb = _ref.setRowsNb;
   return _react.createElement("div", null, "Show", _react.createElement("select", {
