@@ -1,0 +1,17 @@
+button {
+    background: #eeeeee;
+}
+
+.data-table-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns-header {
+    width: 100%;
+    display: flex;
+}
+
+.columns-header svg {
+    margin:0 5px;
+}
